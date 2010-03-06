@@ -1,0 +1,15 @@
+PyXmppBot
+
+Wei Liu <liuw@liuw.name>
+
+PyXmppBot is a XMPP bot framework written in Python. It's inspired by
+PyGtalkRobot. But it's more extensible than PyGtalkRobot. 
+
+A significant advantage over PyGtalkRobot is that it supports dynamic
+message handler registering. That handler can either be a class method 
+or a function.
+
+I'm planning to support xmlrpc. So it's possible to setup a robot
+server in the near future.
+
+PyXmppBot is distributed under GPLv2, enjoy it.

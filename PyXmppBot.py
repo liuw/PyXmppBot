@@ -194,5 +194,3 @@ class XmppBot:
                 
     def defaultMessageHandler(self, msgsender, msgbody, args):
         self.replyMessage(msgsender, msgbody)
-
-    
