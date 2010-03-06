@@ -129,14 +129,7 @@ class XmppBot:
             return roster.getShow(jid)
         else:
             return None
-        
-    def getStatus(self, jid):
-        roster = self.getRoster()
-        if roster is not None:
-            return roster.getStatus(jid)
-        else:
-            return None
-        
+
     def setState(self, show, status):
         if show:
             show = show.lower()
