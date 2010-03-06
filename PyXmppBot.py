@@ -14,7 +14,7 @@ import urllib
 import re
 import inspect
 
-'''XmppBot: A very simple jabber/xmpp bot framework
+'''PyXmppBot: A very simple jabber/xmpp bot framework
 
 This is a simple jabber/xmpp bot framework using regular expression patterns to
 dispatch incoming messages.
@@ -186,7 +186,7 @@ class XmppBot:
                         # into next match
                         if inspect.ismethod(handler):
                             handler(msgsender, msgbody, m.groups())
-                        else:
+                        elif inspect.isfunction(handler):
                             handler(self, msgsender, msgbody, m.groups)
                         break
                     except:
